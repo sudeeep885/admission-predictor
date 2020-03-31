@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <h1>Predict Your Admission Now!</h1>
+    <br>
+    <form action="/predict" method="POST" style="display: grid;">
+    <label for="gre-score">GRE Score</label>
+    <input id="gre-score" type="text" name="gre-score">
+    <label for="toefl-score">TOEFL Score</label>
+    <input id="toefl-score" type="text" name="toefl">
+    <label for="univ">University Score</label>
+    <input id="univ" type="text" name="univ">
+    <label for="sop">SOP Score</label>
+    <input id="sop" type="text" name="sop">
+    <label for="lor">LOR Score</label>
+    <input id="lor" type="text" name="lor">
+    <label for="cgpa">CGPA</label>
+    <input id="cgpa" type="text" name="cgpa">
+    <label for="research">Research</label>
+    <input id="research" type="text" name="research">
+    <br>
+    <button type="submit">CHECK</button>
+    </form>
+
+    <br>
+    <h4>{{ pred }}</h4>
+</body>
+</html>
