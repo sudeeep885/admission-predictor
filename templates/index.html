@@ -7,28 +7,34 @@
     <link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 <body>
-    <h1>Predict Your Admission Now!</h1>
-    <br>
-    <form action="/predict" method="POST" style="display: grid;">
-    <label for="gre-score">GRE Score</label>
-    <input id="gre-score" type="text" name="gre-score">
-    <label for="toefl-score">TOEFL Score</label>
-    <input id="toefl-score" type="text" name="toefl">
-    <label for="univ">University Score</label>
-    <input id="univ" type="text" name="univ">
-    <label for="sop">SOP Score</label>
-    <input id="sop" type="text" name="sop">
-    <label for="lor">LOR Score</label>
-    <input id="lor" type="text" name="lor">
-    <label for="cgpa">CGPA</label>
-    <input id="cgpa" type="text" name="cgpa">
-    <label for="research">Research</label>
-    <input id="research" type="text" name="research">
-    <br>
-    <button type="submit">CHECK</button>
-    </form>
-
-    <br>
-    <h4>{{ pred }}</h4>
+    <div class="main-text">
+        <h1>Admission Predictor</h1>
+        <h4>Want to study Abroad?</h4>
+        <small>What are your chances of getting into college?</small>
+    </div>
+    <div class="predictor">
+        <h3>Predict Your Admission Now!</h3>    
+        <div class="container">
+            <form action="/predict" method="POST">
+                <label for="gre-score">GRE Score (0-340)</label>
+                <input id="gre-score" type="text" name="gre-score">
+                <label for="toefl-score">TOEFL Score (0-120)</label>
+                <input id="toefl-score" type="text" name="toefl">
+                <label for="univ">University Score (0-5)</label>
+                <input id="univ" type="text" name="univ">
+                <label for="sop">SOP Score (0-5)</label>
+                <input id="sop" type="text" name="sop">
+                <label for="lor">LOR Score (0-5)</label>
+                <input id="lor" type="text" name="lor">
+                <label for="cgpa">CGPA/SGPA (0-10)</label>
+               <input id="cgpa" type="text" name="cgpa">
+               <label for="research">Research (0/1)</label>
+               <input id="research" type="text" name="research">
+                   
+                <button type="submit">PREDICT</button>
+            </form>
+            <h4>{{ pred }}</h4>
+        </div>
+    </div>   
 </body>
 </html>

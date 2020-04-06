@@ -1,7 +1,104 @@
-body {
-	margin: 0;
-	padding: 0;
+*{
+	margin: 0em;
+	padding: 0em;
 	box-sizing: border-box;
-	background-color: aqua;
 }
 
+body{
+    background-color: #d1eafd;
+}
+
+.main-text{
+	width: 60%;
+	margin: 5px auto -10px auto;
+    border: 2px solid #1c7fb4;
+    padding: 5px;
+    text-align: center;
+    background-color: #0f1541;
+    color: aliceblue;
+}
+
+h1{
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	padding: 10px;
+    font-weight: 900;
+}
+
+h4{
+    padding: 5px;
+    color: #c7cad6;
+}
+
+small{
+   color: #b4f7f7;
+   padding: 5px;
+   margin-bottom: 10px;
+}
+
+.predictor{
+	width: 60%;
+	margin: 40px auto;
+	border: 1px solid black;
+}
+
+h3{
+	font-family: algerian, Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	color: #3577f2;
+	background-color: #000;
+	padding: 20px;
+	font-size: 30px;
+}
+
+.container{
+	padding: 10px;
+	background-color:rgba(34, 67, 92, 0.81);
+}
+
+form{
+	display: grid;
+}
+
+label{
+	margin-top: 5px;
+}
+
+input{
+	border: 1px solid black;
+    border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+button{
+	width: 20%;
+	margin: 25px auto auto auto;
+	padding: 8px;
+	text-align: center;
+	color: saddlebrown;
+	background-color: black;
+}
+
+button:hover{
+	color: rgb(228, 183, 152);
+	background-color: rgb(15, 44, 74);
+}
+
+button:active{
+	color: white;
+	background-color: rgb(12, 62, 27);
+}
+
+.container h4{
+    color: black;
+}
+
+@media screen and (max-width: 680px){
+	.main-text, .predictor{
+		width: 80% !important;
+	}
+	button{
+		width: 35%;
+	}
+}
