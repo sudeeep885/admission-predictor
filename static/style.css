@@ -38,7 +38,8 @@ small{
 
 .predictor{
 	width: 60%;
-	margin: 40px auto;
+	margin: 25px auto 0 auto;
+	margin-top: 25px;
 	border: 1px solid black;
 }
 
@@ -62,6 +63,7 @@ form{
 
 label{
 	margin-top: 5px;
+	color: white;
 }
 
 input{
@@ -73,15 +75,15 @@ input{
 
 button{
 	width: 20%;
-	margin: 25px auto auto auto;
+	margin: 20px auto auto auto;
 	padding: 8px;
 	text-align: center;
-	color: saddlebrown;
+	color: white;
 	background-color: black;
 }
 
 button:hover{
-	color: rgb(228, 183, 152);
+	color: white;
 	background-color: rgb(15, 44, 74);
 }
 
@@ -90,8 +92,9 @@ button:active{
 	background-color: rgb(12, 62, 27);
 }
 
-.container h4{
-    color: black;
+.container h2{
+	color: white;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 680px){
